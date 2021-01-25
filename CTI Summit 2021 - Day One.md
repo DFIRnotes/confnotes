@@ -183,3 +183,135 @@
 
 * _missed more talks_
 
+## The Cognitive Stairways of Analysis - Nicole Hoffman @threathuntergr
+* bio bg
+* agenda:
+  * analysis
+  * six models
+  * three stairways
+  * resources
+* Cognitive Interpretations of Data Analysis paper
+  * schema matching and updating
+  * exploratory vs confirmatory anlaysis
+* Statistical Investigation Process Christopher Chatfield
+  * Clean the data
+    * then Quality of Information Check
+  * EDA before looking for a model
+    * Regression Analysis: trying to find relationships between variables or data structures
+* Model of Police Operational Intelligence Analysis
+  * Think Steps
+  * decompose case into steps, classify and structure information effectively
+* ... missed one ...
+* Medical Diagnosis Process from _Improving Diagnosis in Healthcare_
+  * cyclical process for data collection and analysis
+  * taking data from patient, translating to determine a diagnosis
+  * physical exam : patient report :: full raw data : MSSP alert
+* Simple Weather Forecasting Workflow - Meteorology
+  * Takeaway: understand/establish the (physical) environment
+  * step: "Subjective interpretation by meterologist"
+* key takeaways (summary slide)
+  * accidential stairway creation
+* Stairway one
+  1. Alert
+  2. Scope
+  3. QoI check , maybe compile more data
+  4. Clean, normalise, and Prune data
+  5. EDA / Viz / Regression
+  6. ...
+* Stairway Two ...
+* Stairway Three: Red Team analysis
+  1. Scope
+  2. Red Team Analysis : vulnerability
+  3. Hypothese, think steps
+  4. Compile Data, QoI check
+  5. Clean and prune data
+  6. (cycle back)
+  7. Confirmatory analysis
+  8. dissemination
+* thanks and resource links
+* questions
+  * When to stop analysis and publish?
+    * know your audience
+
+## (partial) Data Matters: More Effective Threat Hunting and Defense with Internet Scan Data - Derek Abdin
+* bg: currently CTO Censys, Rapid7 before that, game security
+* Internet history, humourously
+* how to scan the Internet (but don't please)
+  * zmap paper / tool
+  * load-balance multi-origin scanning : faster still
+    * lens conflict, icmp messages missed that would inform
+    * what if you multi-origin scan the same dest, knowingly or unknowingly ?
+      * desired outcome a union view
+* most HTTP services on internet are non seen on 80/443 standard ports
+* Hilbret maps of 2003 and 2020 Internet
+* ... missed the rest ...
+
+**Day 2**
+
+## Keynote: SolarWinds of Change: A New Era of Supply Chain Attacks and its Impact on Analysis and Attribution
+* overview: UNC2452 & sophistication of malware and TTPs, stealth
+  * infrastructure discovery
+  * malware
+  * clustering and attribution
+* infrastrructure investigation and results (Isif)
+* malware investigation results (Stephen Eckels)
+  * Teardrop, then SunBurst 
+  * from forensics of suspected "patient zero"
+  * EDR (logs) identified process executed, plugin loaded just before alerts fired
+    * SWI plugin arch: 500+ plugins available
+  * signed large plugin 45K LOC identifed for REM
+  * naming obfuscation : used a dictionary of programming and application terminology 
+    * instead of random data or encryption
+  * network communication states enum use network types
+    * uses common enumeration for malicious operational purposes
+  * control flow obfuscation: hide code purpose behind extra useless code
+    * hides from code review not malware analysis
+  * targeted, two-stage C2
+    * DNS beacon with victim ID
+    * upgrade to HTTP C2 for selected targets (via A record, then CNAME)
+      * CNAME IP is actually a config value
+    * HTTP C2 starts up, while DNS beacons continue
+* Clustering the activity (Jacqueline O’Leary)  
+    * from three activtiy clusters
+      * with more malware analysis  
+      * attribution analysis review
+    * UNC - uncategorized group: cluster of intrusion activity and observables
+    * via target overlaps, distinguish first and second stage victim
+    * supply chain compromises strain this, important to classify victims/targets
+    * eg DNS request decoding might indicate first-stage victims, but more analysis is needed
+  * But SUPERNOVA
+    * started in same activity cluster
+    * analysis shows different properties, sophistication, attack phase ("requires exploitation")
+  * "Low malware footprint"
+    * fewer custom tools, use of credentials, and Public Tools (Beacon, Mimikatz)
+    * UNC2452 distinct from other types of operators
+    * prevents some tool-based clustering and mdoes of attribution
+  * operational security in target env: 
+    * removed tools and persistence configs
+    * behaviour is pattern to track
+    * temporary file replacement technique: restore orginal file after lookalike execution (!)
+  * infrastructure opsec
+    * long lifetime hosts and domains names (years and registrants ago)
+    * individual infa per target
+    * masquerading hostnames : lookalike local host names and plausible business apps
+      * RDP SSL certificates => lookalike domains and ids , from internet scanning data
+* conclusions and resources
+  * thanks to IR teams and public research assistance
+
+## (missed many)
+
+coming soon: threatintel.academy, JTIIT.org !   
+
+## Closing Panel: What did you learn? -> Qs from Slack
+* More than one version of the intelligence cycle ?!
+* Design Thinking applied to CTI
+* Outside perspectives applied to CTI, eg Journalism
+* when to write reports and who the audience might be
+* how are stakeholders incentivised -> communications strategy
+* what are the pain points in your process ? (eg helping Red Team, SOC)
+  * get requirements and builds relationship goodwill
+* For MITRE ATT&CK refs: does the stakeholder want techniques and procedures or only tactics ?
+  * Katie counters there should be no such thing :)
+* "what is your biggest concern" as a conversation starter with stakeholder
+  * Ransomware ? Well, business continuity
+  * 
