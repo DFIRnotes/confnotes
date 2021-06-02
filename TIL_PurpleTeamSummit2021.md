@@ -121,11 +121,40 @@ I also found the lunchtime session with SANS Technical Institute team (sans.edu)
 
 # Day 2
 
-## Understanding the Effectiveness od Exploit Mitigations
-**Understanding the Effectiveness od Exploit Mitigations for Purple Team** - Stephen Sims, curriculum lead for Offensive Operations, author SEC660, SEC760
+## Understanding the Effectiveness of Exploit Mitigations
+**Understanding the Effectiveness of Exploit Mitigations for Purple Team** - Stephen Sims, curriculum lead for Offensive Operations, author SEC660, SEC760
 * pulled material for this talk from SEC599, SEC660, and SEC760
+  * feels like he explained all of EMET and Defender in one talk!
 
 ## Purple Team Feedback Loop
+**Purple Team Feedback Loop** - Michael Rogers
+* Describes turning existing processes purple to close gaps 
+  * in seven (7) (?!) areas
+  * also uses threat hunting and tabletops in a Progressive Purple Feedback Loop (!)
+* describes a robust detection development and testing process involving all roles, in four phases
+  1. Research and Development (R & D)
+  1. Creation
+  1. Testing
+  1. Deployment and Lessons Learned
+* measurement and reporting suggestions throughout, to motivate teams, priortise issues, and report up
+  * new detections, new techniques, new hunts, improved rule fidelity
+* demostrates across a few test scenarios: use Agile processes to plan, track, and execute work
+  * uses Level of Effort (LoE) points to allocate Red, blue, CTI, etc resources to a board track -> common goal
+* A different Purple Team Maturity Model, four levels:
+  1. Basic: broken controls, "hygiene" concerns, and a pen test report with findings
+  2. Average
+  3. Exceeding
+  4. Defining Standards
+* Specific guidance on "buy-in" and communicating RoI to different stakeholders
+  * define and track output
+  * work to common goals
+* Project manager/coordinator: dedicated role essential, requires highly skilled person
 
 ## Supply Chain Purple
-
+**Supply Chain Purple** Mike Gualtieri @mlgualtieri
+* Hands on technical talk that describes a technique, explains how it works, demonstrates how to simulate a sophisticated intrusion using it
+  * also how to detect it using Sysmon
+  * how to combine host (sysmon) data with network data (Wireshark) to refine the detection
+* many helpful tips on succesfully using malicious code in scenario or technique based exercises
+  * and on steadily increasing obfuscation / evasion to better improve detection and response
+* Details, source code, slides, blog post shared on his [GitHub](https://github.com/mlgualtieri/PurpleTeamSummit/tree/main/Summit-May2021)
