@@ -2,7 +2,7 @@
 
 _These are not my full notes taken, as those are colorful and mass 300 g._
 
-All the talks were informative and most were over-filled with actionable recommendations and pitfalls to avoid based on the experience of the presenters. Thanks to all the presenters, hosts, and especially the event staff!
+All the talks were informative and most were over-filled with actionable recommendations and pitfalls to avoid based on the experience of the presenters. Thanks to all the presenters, hosts, and especially the event staff! Slides are now posted to Summits [archive](https://www.sans.org/cyber-security-summit/archives/) page and videos are expected to post later.
 
 # Day 1 Talk Highlights
 
@@ -42,7 +42,7 @@ All the talks were informative and most were over-filled with actionable recomme
   * maybe fewer detections that work much better, rather than so many less useful detections and alerts
 
 ## Purple Wars Episode II 
-**Purple Wars Episode II: Attack of the Emulators** - Jonas Baueters
+**Purple Wars Episode II: Attack of the Emulators** - Jonas Bauters
 * outlines the Offensive Security Maturity Model
   * distinguishes Vuln Scan, Vuln assessment, Pen Test from
   * Red Team, Purple Team, Adversary Emulation
@@ -67,7 +67,7 @@ All the talks were informative and most were over-filled with actionable recomme
 ## Don't Fear the Zero: Test Driven Approach to Analytic Development
 **Don't Fear the Zero: Test Driven Approach to Analytic Development** - Fred Frey & Tim Nary (BAH Dark Labs)
 * a detailed and thorough introduction to analytic design by testing, what some now call "detection engineering"
-* walk through a simple looking detection ```net.exe localgroup adminsitrators``` describing how complex it can be to get right
+* walk through a simple looking detection ```net.exe localgroup administrators``` describing how complex it can be to get right
   * and another ```wmic process call create script.vbs```
 * Starting from "zero hits can mean a lot of things" ( the difference between zero results and null results ), they describe in detail a continuous process starting from threat intelligence to design, test, improve, and maintain effective detections
 * "Production ready real world analytics"
