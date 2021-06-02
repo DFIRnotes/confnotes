@@ -1,8 +1,6 @@
 # TIL Purple Team Summit 2021
 
-_These are not my full notes taken, as those are colorful and mass 500g._
-
-_work in progress_
+_These are not my full notes taken, as those are colorful and mass 300 g._
 
 All the talks were informative and most were over-filled with actionable recommendations and pitfalls to avoid based on the experience of the presenters. Thanks to all the presenters, hosts, and especially the event staff!
 
