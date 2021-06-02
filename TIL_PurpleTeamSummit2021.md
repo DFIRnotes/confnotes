@@ -4,6 +4,8 @@ _These are not my full notes taken, as those are colorful and mass 500g._
 
 _work in progress_
 
+All the talks were informative and most were over-filled with actionable recommendations and pitfalls to avoid based on the experience of the presenters. Thanks to all the presenters, hosts, and especially the event staff!
+
 # Day 1 Talk Highlights
 
 ## Purple Vitamins - Didier Stevens
@@ -100,6 +102,30 @@ _work in progress_
   * Vary the methodology to get more learning
   * Eventually, gamification
 
+## Red Team Engagements: Training Blue Team to Hunt Adversaries
+_need to look over the slides / watch this one again to get more of it_
+* Four Phases:
+  1. Detection Chart (ala Navigator)
+  1. Purple Team Exercise
+  1. Adv Detection Pipeline
+  1. Adv Services Lifecycle
+* Execution and AAR phases
+  * Don't disable monitoring, increase noise!
+  * Provide IoCs to Blue Team if needed, "white card"
+* Remediation
+* Reporting and leadership engagement
+  * RoI via improved MTTD, MTTR
+
+
 I also found the lunchtime session with SANS Technical Institute team (sans.edu) helpful and informative.
 
 # Day 2
+
+## Understanding the Effectiveness od Exploit Mitigations
+**Understanding the Effectiveness od Exploit Mitigations for Purple Team** - Stephen Sims, curriculum lead for Offensive Operations, author SEC660, SEC760
+* pulled material for this talk from SEC599, SEC660, and SEC760
+
+## Purple Team Feedback Loop
+
+## Supply Chain Purple
+
